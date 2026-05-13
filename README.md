@@ -1,6 +1,5 @@
 # How to Customize the Blazor Carousel Component
 
-**Repository Description**  
 This repository contains a Blazor WebAssembly sample that demonstrates how to customize the appearance and behavior of the Syncfusion Blazor Carousel component using templates.
 
 This sample explains how to customize the appearance of Blazor Carousel indicators, as well as the previous and next navigators using templates. It also includes example code to hide indicators and navigators, add a play button, and customize its appearance and behavior.
