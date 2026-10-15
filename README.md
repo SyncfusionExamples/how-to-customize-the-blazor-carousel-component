@@ -54,16 +54,6 @@ dotnet run
 
 4. Open the application URL displayed in the terminal after the application starts successfully.
 
-## Project Structure
-
-- `Client/Pages/Index.razor` - Main sample page that hosts the `SfCarousel` component, defines Carousel items, navigator templates, thumbnail indicator templates, play button template, component logic, and custom styling.
-- `Client/Program.cs` - Configures the Blazor WebAssembly application and registers Syncfusion Blazor services.
-- `Client/_Imports.razor` - Contains shared Razor namespaces used by the application.
-- `Client/wwwroot/images/carousel/san-francisco.png` - Carousel slide image and thumbnail indicator asset.
-- `Client/wwwroot/images/carousel/london.png` - Carousel slide image and thumbnail indicator asset.
-- `Client/wwwroot/images/carousel/tokyo.png` - Carousel slide image and thumbnail indicator asset.
-- `Client/wwwroot/images/carousel/moscow.png` - Carousel slide image and thumbnail indicator asset.
-
 ## Support and Feedback
 
 - For general product questions, visit the [Syncfusion Community Forum](https://www.syncfusion.com/forums) or [Syncfusion Support](https://www.syncfusion.com/support).
