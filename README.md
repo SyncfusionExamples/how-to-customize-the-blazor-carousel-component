@@ -1,53 +1,66 @@
 # How to Customize the Blazor Carousel Component
 
-**Repository Description**  
-This repository contains a Blazor WebAssembly sample that demonstrates how to customize the appearance and behavior of the Syncfusion Blazor Carousel component using templates.
+## Overview
 
-This sample explains how to customize the appearance of Blazor Carousel indicators, as well as the previous and next navigators using templates. It also includes example code to hide indicators and navigators, add a play button, and customize its appearance and behavior.
+This sample demonstrates how to customize the appearance and behavior of the Syncfusion [Blazor Carousel](https://www.syncfusion.com/blazor-components/blazor-carousel) component in a hosted Blazor WebAssembly application. The implementation focuses on customizing carousel indicators, previous and next navigators, and playback controls through template-based configuration. It also demonstrates how to hide default navigation elements and replace them with tailored user interface elements that better match application design requirements.
 
-## Project Overview
-The purpose of this project is to help developers understand how to use templates with the Syncfusion Blazor Carousel component to build highly customized and interactive carousel experiences. It focuses on controlling navigation elements and indicators to suit different UI requirements.
+The sample is useful for developers who need complete control over Carousel navigation experiences for scenarios such as product galleries, promotional banners, onboarding screens, featured content rotators, and interactive dashboards. The project shows how Syncfusion Carousel templates can be used to create a more engaging and branded user experience while retaining built-in Carousel functionality. 
 
-## Features
-- Custom templates for Carousel indicators and navigators  
-- Ability to hide Carousel indicators and navigation buttons  
-- Custom play button integration  
-- Enhanced control over Carousel navigation behavior  
+## Key Features
 
-## Examples
-- Online demo:<br>
-https://blazor.syncfusion.com/demos/carousel/templates?theme=fluent
+- Uses the Syncfusion `SfCarousel` component to display a rotating image gallery with four destination images.
+- Configures automatic slide transitions using the `AutoPlay` property with a custom play/pause toggle implementation.
+- Sets a 2-second slide interval using the `Interval="2000"` property.
+- Applies the `CarouselAnimationEffect.Fade` animation effect for smooth slide transitions.
+- Disables continuous navigation by setting `Loop="false"`.
+- Hides the default indicator UI using `ShowIndicators="false"` and replaces it with a fully customized `IndicatorsTemplate`.
+- Implements image-based thumbnail indicators through the `IndicatorsTemplate`, allowing users to navigate using preview images.
+- Uses `PreviousButtonTemplate` and `NextButtonTemplate` to replace the default navigator buttons with custom `SfButton` components and SVG icons.
+- Configures navigator visibility using `ButtonsVisibility="CarouselButtonVisibility.VisibleOnHover"`.
+- Enables the built-in play button functionality using `ShowPlayButton="true"` and overrides the default UI through `PlayButtonTemplate`.
+- Implements custom play and pause states using SVG icons and a toggle button.
+- Uses the `IsSlidePlay` boolean property to dynamically control Carousel autoplay behavior.
+- Binds indicator images through the `IndicatorsImageNameList` collection.
+- Customizes active indicator appearance using CSS, including borders, spacing, sizing, and highlighting.
+- Applies custom CSS styling for navigation buttons, play/pause controls, thumbnail indicators, and image presentation.
+- Demonstrates template-based customization of Carousel navigation and playback controls without modifying the component's core functionality.
 
 ## Prerequisites
-- Visual Studio 2022  
-- .NET SDK compatible with Blazor WebAssembly  
 
-## Installation and Running the Project
-1. Check out or clone this repository to a local directory.
-2. Open the solution file using Visual Studio 2022.
-3. Restore the NuGet packages by rebuilding the solution.
-4. Build and run the project to view the customized Carousel component.
+- [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) or [Visual Studio Code](https://code.visualstudio.com/)
+- [.NET SDK](https://dotnet.microsoft.com/en-us/download/dotnet) compatible with the project's target framework
 
-## Usage
-Run the application and explore how the Carousel navigation buttons, indicators, and play button are customized using templates. Modify the template definitions to experiment with different UI behaviors.
+## How to Run the Project
 
-## Documentation
-- General Syncfusion documentation:<br>
-https://help.syncfusion.com/
-- Blazor Introduction:<br>
-https://blazor.syncfusion.com/documentation/introduction
-- Blazor Carousel Getting Started:<br>
-https://blazor.syncfusion.com/documentation/carousel/getting-started
+**Visual Studio 2022**
 
-## Additional Resources
-- Carousel Navigators and Indicators documentation:<br>
-https://blazor.syncfusion.com/documentation/carousel/navigators-and-indicators
+1. Clone or download the repository.
+2. Open the `CustomizingCarousel.sln` solution file.
+3. Restore all NuGet packages.
+4. Build the solution.
+5. Run the application using `Ctrl+F5`.
+6. Open the local application URL displayed by Visual Studio after successful startup.
 
-## Troubleshooting
-- Ensure the correct .NET SDK and Visual Studio version are installed.
-- Rebuild the solution if NuGet packages fail to restore.
-- Check browser developer tools for runtime or rendering issues.
-- Verify template definitions if navigation elements do not render as expected.
+**Visual Studio Code**
 
-## Support
-For detailed API references, advanced configuration options, and additional examples, refer to the Syncfusion Blazor documentation links provided above.
+1. Clone or download the repository.
+2. Open the repository folder in Visual Studio Code.
+3. Navigate to the repository root directory.
+
+```bash
+dotnet restore
+dotnet run
+```
+
+4. Open the application URL displayed in the terminal after the application starts successfully.
+
+## Support and Feedback
+
+- For general product questions, visit the [Syncfusion Community Forum](https://www.syncfusion.com/forums) or [Syncfusion Support](https://www.syncfusion.com/support).
+- To report an issue specific to this sample, open a GitHub issue in this repository.
+- Relevant documentation: https://blazor.syncfusion.com/documentation/carousel/navigators-and-indicators
+- Online demo: https://blazor.syncfusion.com/demos/carousel/templates
+
+## License
+
+This is a Syncfusion sample project provided to demonstrate product usage. Review the [Syncfusion license terms](https://www.syncfusion.com/sales/pricing?category=ui-components) before using Syncfusion components in your own applications.
